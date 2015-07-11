@@ -1,19 +1,5 @@
 require 'plane'
 
-## Note these are just some guidelines!
-## Feel free to write more tests!!
-
-# When we create a new plane, it should be "flying",
-# thus planes can not be created in the airport.
-#
-# When we land a plane at the airport, the plane in question should
-# be "landed"
-#
-# When the plane takes of from the airport, it should be "flying" again
-#
-# Think about your implementation - allow a plane to be "flying" and landed?
-# Are you testing that?
-
 describe Plane do
   let(:plane) { Plane.new }
 
@@ -32,7 +18,7 @@ describe Plane do
 
   it 'can not land while landed' do
     plane.land
-    expect { plane.land }.to raise_error 'Can not land while landed'
+    expect { plane.land }.to raise_error 'Already landed'
   end
 
   it 'can take off' do
@@ -46,7 +32,6 @@ describe Plane do
   end
 
   it 'can not take off if not landed' do
-    expect { plane.take_off }.to raise_error 'Can not take off if not landed'
+    expect { plane.take_off }.to raise_error 'Already flying'
   end
-
 end

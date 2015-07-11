@@ -58,20 +58,6 @@
       "/Users/makerslaptop95/Desktop/Projects/airport_challenge_2/spec/plane_spec.rb": [
         1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         8,
         null,
@@ -106,7 +92,6 @@
         1,
         2,
         null,
-        null,
         null
       ],
       "/Users/makerslaptop95/Desktop/Projects/airport_challenge_2/lib/plane.rb": [
@@ -121,10 +106,6 @@
         null,
         1,
         4,
-        3,
-        null,
-        1,
-        null,
         null,
         null,
         1,
@@ -133,14 +114,10 @@
         null,
         1,
         2,
-        1,
-        null,
-        1,
-        null,
         null,
         null
       ]
     },
-    "timestamp": 1436644779
+    "timestamp": 1436645377
   }
 }

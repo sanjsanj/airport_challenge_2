@@ -8,11 +8,7 @@ class Plane
   end
 
   def land
-    if @location == 'air'
-      @location = 'ground'
-    else
-      fail 'Can not land while landed'
-    end
+    @location == 'air' ? @location = 'ground' : fail('Already landed')
   end
 
   def landed?
@@ -20,10 +16,6 @@ class Plane
   end
 
   def take_off
-    if @location == 'ground'
-      @location = 'air'
-    else
-      fail 'Can not take off if not landed'
-    end
+    @location == 'ground' ? @location = 'air' : fail('Already flying')
   end
 end
