@@ -12,6 +12,8 @@ require 'airport'
 # If the airport is full then no planes can land
 
 describe Airport do
+  let(:airport) { Airport.new }
+  let(:plane) { double :plane }
 
   describe 'take off' do
     xit 'instructs a plane to take off'
@@ -20,7 +22,10 @@ describe Airport do
   end
 
   describe 'landing' do
-    xit 'instructs a plane to land'
+    it 'instructs a plane to land' do
+      airport.landing_permission plane
+      expect(airport.landed_planes).to include plane
+    end
 
     xit 'receives a plane'
   end
