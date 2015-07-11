@@ -1,6 +1,8 @@
 Airport Challenge
 =================
 
+[![Build Status](https://travis-ci.org/sanjsanj/airport_challenge_2.svg?branch=master)](https://travis-ci.org/sanjsanj/airport_challenge_2)  [![Coverage Status](https://coveralls.io/repos/sanjsanj/airport_challenge_2/badge.svg?branch=master&service=github)](https://coveralls.io/github/sanjsanj/airport_challenge_2?branch=master)  [![Code Climate](https://codeclimate.com/github/sanjsanj/airport_challenge_2/badges/gpa.svg)](https://codeclimate.com/github/sanjsanj/airport_challenge_2)
+
 Instructions
 ---------
 
@@ -41,7 +43,7 @@ So that I can avoid accidents
 I want to be able to prevent airplanes landing or taking off when the weather is stormy
 ```
 
-Your task is to test drive the creation a set of classes/modules to satisfy all the above user stories. You will need to use random number generator to set the weather (it is normally sunny but on rare occasions it may be stormy). In your tests, you'll need to use a stub to override random weather to ensure consistent test behaviour. Finally, every plane must have a status indicating whether it's flying or landed. 
+Your task is to test drive the creation a set of classes/modules to satisfy all the above user stories. You will need to use random number generator to set the weather (it is normally sunny but on rare occasions it may be stormy). In your tests, you'll need to use a stub to override random weather to ensure consistent test behaviour. Finally, every plane must have a status indicating whether it's flying or landed.
 
 The existing tests in the spec folder, and base classes in the lib folder are provided merely as a general guide.  Please create more classes, unit and/or feature tests as appropriate.  The existing specs provide the layout of a set of pending unit tests, and a pending 'grand finale' feature test that combines a number of features. It is up to you to implement the tests and create additional tests as necessary.
 
@@ -49,7 +51,7 @@ For overriding random weather behaviour, please read the documentation to learn 
 
 As mentioned above the existing tests are there just for the inspiration if you need it. You don’t have to implement every single test there and you aren’t limited by the tests there either. Feel free to modify the tests as you see fit.
 
-Please create separate files for every class, module and test suite. 
+Please create separate files for every class, module and test suite.
 
 The submission will be judged on the following criteria:
 
@@ -59,6 +61,6 @@ The submission will be judged on the following criteria:
 
 Note that is a practice 'Tech Test' of the kinds that employers use to screen developer applicants.  More detailed submission requirements/guidelines are in [CONTRIBUTING.md](CONTRIBUTING.md)
 
-Finally, don’t overcomplicate things. This task isn’t as hard as it may seem at first. 
+Finally, don’t overcomplicate things. This task isn’t as hard as it may seem at first.
 
 * Finally submit a pull request before Monday at 9am with your solution or partial solution.  However much or little amount of code you wrote please please please submit a pull request before Monday at 9am
