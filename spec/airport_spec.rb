@@ -15,19 +15,25 @@ describe Airport do
   let(:airport) { Airport.new }
   let(:plane) { double :plane }
 
-  describe 'take off' do
-    xit 'instructs a plane to take off'
-
-    xit 'releases a plane'
-  end
-
   describe 'landing' do
-    it 'instructs a plane to land' do
+    it 'can let a plane land' do
       airport.landing_permission plane
       expect(airport.landed_planes).to include plane
     end
 
-    xit 'receives a plane'
+    it 'does not let a plane land when airport is full' do
+      full_error = 'Permission denied'
+      airport.capacity.times { airport.landing_permission plane }
+      expect { airport.landing_permission plane }.to raise_error full_error
+    end
+  end
+
+  describe 'take off' do
+    it 'can let a plane take off' do
+      airport.landing_permission plane
+      airport.order_takeoff plane
+      expect(airport.landed_planes).to eq []
+    end
   end
 
   describe 'traffic control' do
