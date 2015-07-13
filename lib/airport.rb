@@ -10,7 +10,7 @@ class Airport
   end
 
   def landing_permission plane
-    fail 'Denied due to weather' if @weather != 'sunny'
+    fail 'Denied due to bad weather' if @weather != 'sunny'
     full? ? deny_landing : allow_to_land(plane)
   end
 
@@ -28,7 +28,7 @@ class Airport
   end
 
   def order_takeoff plane
-    fail 'Denied due to weather' if @weather != 'sunny'
+    fail 'Denied due to bad weather' if @weather != 'sunny'
     plane.take_off
     @planes.delete plane
   end
