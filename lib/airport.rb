@@ -28,6 +28,7 @@ class Airport
   end
 
   def order_takeoff plane
+    fail 'Denied due to weather' if @weather != 'sunny'
     plane.take_off
     @planes.delete plane
   end
