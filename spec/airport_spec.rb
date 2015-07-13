@@ -54,9 +54,13 @@ describe Airport do
     # the plane can not land, and must not be in the airport
 
     context 'when weather conditions are stormy' do
-      xit 'does not allow a plane to take off'
+      it 'does not allow a plane to land' do
+        bad_weather = 'Denied due to weather'
+        airport.weather = 'stormy'
+        expect { airport.landing_permission plane }.to raise_error bad_weather
+      end
 
-      xit 'does not allow a plane to land'
+      xit 'does not allow a plane to take off'
     end
   end
 end

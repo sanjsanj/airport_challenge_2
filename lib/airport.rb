@@ -1,14 +1,16 @@
 class Airport
   DEFAULT_CAPACITY = 6
 
-  attr_accessor :capacity
+  attr_accessor :capacity, :weather
 
   def initialize capacity = DEFAULT_CAPACITY
     @capacity = capacity
     @planes = []
+    @weather = 'sunny'
   end
 
   def landing_permission plane
+    fail 'Denied due to weather' if @weather != 'sunny'
     full? ? deny_landing : allow_to_land(plane)
   end
 
