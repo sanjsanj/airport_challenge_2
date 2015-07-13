@@ -2,9 +2,14 @@ require 'plane'
 
 describe Plane do
   let(:plane) { Plane.new }
+  let(:airport) { double :airport, order_takeoff: nil }
 
   it 'is flying when created' do
     expect(plane).to be_flying
+  end
+
+  it 'can request to land' do
+    expect(plane).to respond_to :request_to_land
   end
 
   it 'can land' do
@@ -19,6 +24,11 @@ describe Plane do
   it 'can not land while landed' do
     plane.land
     expect { plane.land }.to raise_error 'Already landed'
+  end
+
+  xit 'can request to takeoff' do
+    plane.land
+    # expect(plane).to respond_to :request_to_takeoff with 1 arg
   end
 
   it 'can take off' do

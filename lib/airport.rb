@@ -9,7 +9,16 @@ class Airport
   end
 
   def landing_permission plane
-    full? ? fail('Permission denied') : @planes << plane
+    full? ? deny_landing : allow_to_land(plane)
+  end
+
+  def allow_to_land plane
+    plane.land
+    @planes << plane
+  end
+
+  def deny_landing
+    fail 'Permission denied'
   end
 
   def landed_planes
@@ -17,6 +26,7 @@ class Airport
   end
 
   def order_takeoff plane
+    plane.take_off
     @planes.delete plane
   end
 

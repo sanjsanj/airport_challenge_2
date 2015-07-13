@@ -2,7 +2,7 @@ require 'airport'
 
 describe Airport do
   let(:airport) { Airport.new }
-  let(:plane) { double :plane }
+  let(:plane) { double :plane, land: nil, take_off: nil }
 
   describe 'capacity' do
     it 'defaults to 6 if not specified' do
@@ -21,14 +21,14 @@ describe Airport do
   end
 
   describe 'landing' do
-    it 'can let a plane land' do
+    it 'can land a plane' do
       airport.landing_permission plane
       expect(airport.landed_planes).to include plane
     end
   end
 
   describe 'take off' do
-    it 'can let a plane take off' do
+    it 'can take a plane off' do
       airport.landing_permission plane
       airport.order_takeoff plane
       expect(airport.landed_planes).to eq []

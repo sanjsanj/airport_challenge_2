@@ -3,23 +3,6 @@ Airport Challenge
 
 [![Build Status](https://travis-ci.org/sanjsanj/airport_challenge_2.svg?branch=master)](https://travis-ci.org/sanjsanj/airport_challenge_2)  [![Coverage Status](https://coveralls.io/repos/sanjsanj/airport_challenge_2/badge.svg?branch=master&service=github)](https://coveralls.io/github/sanjsanj/airport_challenge_2?branch=master)  [![Code Climate](https://codeclimate.com/github/sanjsanj/airport_challenge_2/badges/gpa.svg)](https://codeclimate.com/github/sanjsanj/airport_challenge_2)
 
-Instructions
----------
-
-* Challenge time: rest of the day and weekend, until Monday 9am
-* Feel free to use google, your notes, books, etc but work on your own
-* If you have a partial solution, still check in a partial solution
-* You must submit a pull request to this repo with your code by 9am Monday morning
-
-Steps
--------
-
-1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan_june2015 (start by forking this repo, then edit week 1 - you can edit directly on Github)
-2. Fork this repo, and clone to your local machine
-3. run the command `gem install bundle`
-4. When teh installation completes, run `bundle`
-3. Complete the following task:
-
 Task
 -----
 
