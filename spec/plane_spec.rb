@@ -26,9 +26,8 @@ describe Plane do
     expect { plane.land }.to raise_error 'Already landed'
   end
 
-  xit 'can request to takeoff' do
-    plane.land
-    # expect(plane).to respond_to :request_to_takeoff with 1 arg
+  it 'can request to takeoff' do
+    expect(plane).to respond_to(:request_to_takeoff).with(1).argument
   end
 
   it 'can take off' do
